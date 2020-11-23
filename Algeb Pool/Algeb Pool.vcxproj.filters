@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{4c14e2d4-c3a6-444e-9ca1-d840481bb5e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Ball">
+      <UniqueIdentifier>{89867b98-3a3d-45da-9fe3-1c8d42f4bef5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Stick">
+      <UniqueIdentifier>{69dd2288-4afe-4c4d-a10f-5dc7971c4594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Field">
+      <UniqueIdentifier>{133ce707-e392-473c-9782-7c25d1a556af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision Tester">
+      <UniqueIdentifier>{7507a166-e9ba-49f1-92ae-bc9436d27ef1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Objects\Field\Field.cpp">
+      <Filter>Objects\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Objects\Ball\Ball.cpp">
+      <Filter>Objects\Ball</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\Objects\Stick\Stick.cpp">
+      <Filter>Objects\Stick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Collision Tester\Collision Tester.cpp">
+      <Filter>Collision Tester</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\Objects\Field\Field.h">
+      <Filter>Objects\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Objects\Ball\Ball.h">
+      <Filter>Objects\Ball</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Config.h" />
+    <ClInclude Include="..\src\Objects\Stick\Stick.h">
+      <Filter>Objects\Stick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Collision Tester\Collision Tester.h">
+      <Filter>Collision Tester</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
