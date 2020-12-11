@@ -81,9 +81,11 @@ namespace pool
 				return;
 			}
 
-			if (_whiteBall)
+			DrawCircleV(_position, _radius, _color);
+
+			/*if (_whiteBall)
 			{
-				DrawCircleV(_position, _radius, WHITE);
+				DrawCircleV(_position, _radius, _color);
 			}
 			else
 			{
@@ -102,8 +104,10 @@ namespace pool
 						DrawCircleV(_position, _radius, BLUE);
 					}
 				}
-			}
+			}*/
 		}
+
+
 
 		Vector2 Ball::getPosition()
 		{
@@ -134,6 +138,16 @@ namespace pool
 		bool Ball::getHole()
 		{
 			return _inHole;
+		}
+
+		int Ball::getValue()
+		{
+			return _value;
+		}
+
+		void Ball::setColor(Color color)
+		{
+			_color = color;
 		}
 	}
 }

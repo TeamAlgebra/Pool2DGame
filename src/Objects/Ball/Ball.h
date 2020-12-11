@@ -23,6 +23,7 @@ namespace pool
 			bool _moving;
 			bool _inHole;
 			bool _whiteBall;
+			Color _color;
 		public:
 			Ball();
 			Ball(short value, Vector2 spawnPoint, float radius, bool whiteBall);
@@ -37,6 +38,8 @@ namespace pool
 			float getMass();
 			void setHole(bool inHole);
 			bool getHole();
+			void setColor(Color color);
+			int getValue();
 		};
 	}
 }
